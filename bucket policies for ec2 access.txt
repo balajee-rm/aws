@@ -1,0 +1,17 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowS3ReadAccess",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::<INSERT-ACCOUNT-NUMBER>:role/S3DynamoDBFullAccessRole"
+            },
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::<INSERT-BUCKET-NAME>",
+                "arn:aws:s3:::<INSERT-BUCKET-NAME>/*"
+            ]
+        }
+    ]
+}
