@@ -1,0 +1,17 @@
+Focused on MCQ
+--------------
+AWS Developer Associate training
+https://www.udemy.com/course/aws-developer-associate-training/
+
+Good in Handson (Little more depth is there)
+--------------------------------------------
+DevOps with AWS
+https://www.linkedin.com/learning/devops-with-aws/
+
+Coursera | Online Courses & Credentials From Top Educators. Join for Free
+https://www.coursera.org/learn/aws-cloud-technical-essentials/home/welcome
+
+Yet to Explore but may be a good match
+--------------------------------------
+Prepare for the AWS Certified Developer Associate Exam
+https://www.linkedin.com/learning/paths/prepare-for-the-aws-certified-developer-associate-exam?u=89447330
