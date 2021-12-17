@@ -1,0 +1,123 @@
+https://git-codecommit.us-west-2.amazonaws.com/v1/repos/my-app3
+
+CODE COMMIT		     	    
+-----------
+GIT CLONE HTTP-LOCATION
+git clone https://git-codecommit.us-west-2.amazonaws.com/v1/repos/my-app2
+git add .
+git commit -m "fc"
+git push
+
+GIT CHECKOUT -B FEATURE1
+git push --set-upstream origin branch1
+GIT STATUS
+
+CODE BUILD		
+-----------
+environment variables (ssm)
+parameter passing
+system manager
+S3 bucket for storing artifacts
+
+CODE Deploy	     
+-----------
+____Setting Up EC2 instances____
+putty and puttygen
+https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+user name: ec2-user
+____creating deployment group____
+first create deployment group before creating deployement
+set code deploy role
+create IAM Role for code deploy for ec2 access
+____creating deployement____
+go to user, see the access key
+[pip install aws-shell
+aws-shell]
+[awscliv2
+https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html]
+aws configure --profile aws-devops
+in admin user, take first access key (create access key)
+___checking deployement____
+putty login of ec2 instance
+cd /var/www/html
+ls
+launching app
+___multiple instance setup____
+appspec.yml (hooks)
+___roleback___
+under deployement group --> advanced option --> desect the role back option
+with alarm role back
+
+codepipeline
+------------
+
+
+
+buildspec.yml
+-------------
+install:
+	runtime-version:
+		nodejs:10
+	commands:
+		- printenv
+		- echo "installing something"
+
+artifacts:
+	files:
+		'**/*'
+	name: DevOpsAppArtifacts
+
+regarding environment secret parameter
+--------------------------------------
+ssm - system manager
+role - codebuild - ssmread permission
+
+Ubuntu Hosting
+----------------
+open putty
+terminal- user: ubuntu
+terminal- sudo apt update
+
+cmd- aws configure
+enter access key
+cmd- aws s3 mb s3://BUCKET-NAME --region ap-south-1 --profile aws-devops
+///////////it required yml file///////////cmd- aws deploy push --application-name demo --s3-location s3://balajee-hosting-bucket/demo/demo.zip --ignore-hidden-files --region ap-south-1 --profile aws-devops
+cmd- aws s3 --region ap-south-1 cp demo.zip s3://BUCKET-NAME/demo --acl public-read
+
+terminal- wget https://BUCKET-NAME.s3.ap-south-1.amazonaws.com/demo
+set bucket policy
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowS3Access",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::793451431447:role/S3DynamoDBFullAccessRole"
+            },
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::BUCKET-NAME",
+                "arn:aws:s3:::BUCKET-NAME/*"
+            ]
+        }
+    ]
+}
+
+terminal- sudo apt install unzip
+terminal- unzip demo
+terminal- sudo apt install python3
+terminal- sudo apt install python3-pip
+terminal- pip list
+terminal- pip install flask
+terminal- mysql-client
+terminal- mysql-connector-python
+terminal- sudo nano task.py (for editing)
+	 app.run (debug = True, host='0.0.0.0', port=8080);
+terminal- python3 task.py / flask run --host=0.0.0.0 --port=8080 (app.py file req)
+
+
+
+
+
