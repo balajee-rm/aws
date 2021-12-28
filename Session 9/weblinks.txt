@@ -13,5 +13,5 @@ https://profreehost.com/account/?view=manage&account_id=1692774
 FTP
 FTP Hostname:	ftpupload.net
 FTP Username:	unaux_30679030
-FTP Password:	5toginrf
+FTP Password:	
 
