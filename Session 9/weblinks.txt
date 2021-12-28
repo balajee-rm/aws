@@ -1,0 +1,17 @@
+https://profreehost.com/account/?view=create
+balajee.unaux.com
+Username: unaux_30679030
+Created On: 2021-12-27 04:03:23
+
+DNS
+Nameserver 1:	ns1.unaux.com
+Nameserver 2:	ns2.unaux.com
+MX Record:	mx.unaux.com
+
+https://profreehost.com/account/?view=manage&account_id=1692774
+
+FTP
+FTP Hostname:	ftpupload.net
+FTP Username:	unaux_30679030
+FTP Password:	5toginrf
+

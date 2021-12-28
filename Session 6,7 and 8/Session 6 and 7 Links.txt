@@ -1,0 +1,10 @@
+Nat Gateway
+https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html
+
+Egress and Ingress
+https://aviatrix.com/learn-center/cloud-security/egress-and-ingress/
+
+Creating VPC
+https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/DEV-AWS-MO-GCNv2/lab-4-networking.html
+
+
