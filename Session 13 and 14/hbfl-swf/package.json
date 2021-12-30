@@ -1,0 +1,22 @@
+{
+  "name": "hbfl-swf",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "serverless deploy && serverless client deploy --no-confirm",
+    "delete": "serverless remove"
+  },
+  "author": "Ryan Lewis <ryan@ryanlewis.dev>",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "2.968.0",
+    "lodash": "4.17.21"
+  },
+  "devDependencies": {
+    "aws-read-region": "1.1.0",
+    "serverless": "2.54.0",
+    "serverless-finch": "2.6.0",
+    "serverless-s3-remover": "0.6.0"
+  }
+}
