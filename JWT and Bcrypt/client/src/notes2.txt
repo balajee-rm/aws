@@ -1,0 +1,64 @@
+Styling -> css
+Bring in the element -> HTML
+Handling the dynamic behaviour (Event Handling, Calculations) of page -> JS
+
+JSX inside JS -> Return()
+JS inside JSX -> {}
+
+Two way to open the arrow function
+----------------------------------
+()=>{java_script return(jsx)}
+()=>(jsx)
+
+HTML
+----
+Tag -> <> -> we used to write in JSX
+How will you create box kind of structure (closed one) -> <div></div>
+<name attribute="" attribute="" />
+<center> ... </center> -> horizontally centered
+<input type="text" /> -> text box
+<input type="password" /> -> password
+<input type="submit" value="value_over_button" /> -> submit from
+<button> button_name </button> -> normal button
+<a href = "hyper_link" /> -> anchor text (blue underline word)
+<form> ... </form> -> create form
+<p></p> -> paragraph
+<b></b> -> making bold
+<i></i> -> italic
+<select> 
+<option value="">India</option>
+<option value="">US</option>
+</select>
+
+css
+---
+Inline -> <name style={{ CSS }}
+{backgroundColor: "red", ....}
+External -> class => .class_name, id => #id_name, tag => tag_name
+{
+    background-color: red;
+}
+background-color -> property in CSS
+
+
+Freqently used CSS property
+---------------------------
+background-color
+color -> text color
+font-size
+border: "size line_type color"
+margin: outside the border (b/w elements)
+margin-left
+padding: inside the border (inside element)
+padding-left
+display: flex or block or none -> alignment
+align-item -> verticle
+justify-content -> horizontal
+width: 300px
+height: 450px
+text-align
+
+Even Handling
+-------------
+any enent handling start with "on" as a attribute of tag
+

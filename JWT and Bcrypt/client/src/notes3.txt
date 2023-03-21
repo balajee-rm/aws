@@ -1,0 +1,61 @@
+HTML
+----
+<tag_name attribute="" attribute=""> -> Tag name and attribute
+style ={{  }} -> style attribute
+
+css
+----
+Externel -> file_name.css and import 
+. -> class name
+.class_1_name {
+    margin-left: 20px;
+}
+# -> id name -> unique
+tag_name -> apply for all the tag with similar name
+.abc #id1 table tr {
+
+}
+
+Internal
+Inline -> style attribute -> style = {{ marginLeft: "20px", next_key_value_pair}}
+
+marginLeft -> property_name
+
+
+
+Frequuently used
+-----------------
+border
+backgroundColor
+justifyContent -> horizontal
+alignItems -> verticle
+above 2 properties are interlinked with another property called "display: 'flex'"
+display: flex -> normal writing style
+display: block -> it will take entire row by default, unless forcing the width
+display: none -> hiding the element
+textAlign
+width
+height
+color
+fontSize
+fontFamily
+fontWeight
+backgroundImage
+marging
+padding
+
+jsx inside js -> return(); or ();
+js inside jsx -> {}
+
+HTML -> Bring in the element
+CSS -> to align and style the element and page
+JavaScript -> Handle any dynamic behaviour
+------------------------------------------
+front end
+---------
+event handling -> on__________ = {}
+calculations
+backend
+--------
+database connection
+handling request and response

@@ -1,0 +1,67 @@
+<div> -> division (like a box)
+<button>add</button>
+<img src='location' />
+<form>
+    <input type="text" />
+    <input type="password" />
+    <input type="submit" />
+    <select>
+        <option> India </option>
+        <option> US </option>
+    </select>
+</form>
+
+event handling
+onSubmit -> form
+onClick -> button
+onChange -> textbox, select, radio buttons, checkbox
+onMouseOver -> div, img, any tag
+
+writing js inside jsx -> {}
+writing jsx inside js -> return()
+writing css inside tag -> style={{write here css}}
+writing external css -> <div className={c1} /> -> App.css -> .c1
+In css -> . refes to class, # refers to ID, name referes to tag_name
+
+In css
+------
+color -> text color
+background-color -> background color
+margin -> moving element from the near by element or window
+margin-top -> deviate element from the top
+padding -> moving inside the border
+padding-bottom -> moving inside the border on the bottom side
+inline -> border: "1px solid red" -> thickness of border is 1px, line of border is solid, color of border is red
+external -> border: 1px slod red;
+align-item -> vertically aling the item;
+justify-content -> horizontally align the item;
+align-item and justify-content -> both will work only if you have -> display: "flex"
+disply: flex -> to the required size
+diplay: block -> to the entire row
+
+pring statement
+---------------
+print in colose -> console.log("welcome")
+print in popup -> alert("welcome")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
